@@ -1,0 +1,61 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 30
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 56
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: RuntimeNetLogic1
+  Type: NetLogic
+- File: RuntimeAdded/RuntimeAdded.yaml
+- Name: TrendTimeRange
+  Id: g=66a7580189122a7862ad058a670011e1
+  Supertype: BaseObjectType
+  Children:
+  - Name: Start
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: End
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: TimeSpan
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:0.0000000"
+  - Name: Statistics
+    Type: BaseObjectType
+- Name: RangeStatistics
+  Id: g=235e015edc2ae35e668c226bc07dfbe0
+  Supertype: BaseObjectType
+  Children:
+  - Name: Max
+    Type: BaseDataVariableType
+    DataType: Int64
+    Value: 0
+  - Name: Min
+    Type: BaseDataVariableType
+    DataType: Int64
+    Value: 0
+  - Name: Avg
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: Pen
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType/TrendPen"
